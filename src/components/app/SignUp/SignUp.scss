@@ -1,0 +1,35 @@
+@import "resources/mixins.scss";
+
+.block {
+  @include blockStyle($width: 592px, $padding: 26px 64px 12px);
+
+  .text {
+    margin: 10px 0 37px;
+  }
+
+  .marginTop {
+    margin-top: 24px;
+  }
+
+  .link {
+    display: inline-block;
+    margin-left: 5px;
+    color: $focus-color;
+    text-decoration: underline;
+  }
+
+  .textIncorrect {
+    display: block;
+    margin-top: 16px;
+  }
+
+  .termsConditions {
+    color: $focus-color;
+    text-decoration: none;
+  }
+
+  .button {
+    width: 280px;
+    height: 42px;
+  }
+}

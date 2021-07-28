@@ -1,0 +1,104 @@
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 210px;
+    padding: 20px 24px;
+    cursor: not-allowed;
+
+    * {
+        cursor: not-allowed;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 4;
+        width: 100%;
+        height: 100%;
+        background: rgba(255,255,255,.74);
+        user-select: none;
+        pointer-events: none;
+    }
+
+    .barContainer {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 25px;
+
+        div {
+            display: flex;
+            align-items: center;
+
+            .paperTitle {
+                color: rgba(0, 0, 0, .87);
+            }
+        }
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 6px;
+    }
+
+    .endPointNameContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 153px;
+        height: 46px;
+        background: #FFFFFF;
+        border: .5px solid rgba(0, 0, 0, .23);
+        border-radius: 4px;
+    }
+
+    .endPointUrlContainer {
+        display: flex;
+        align-items: center;
+        width: 81%;
+        height: 46px;
+        margin-left: 6px;
+        background: #FFFFFF;
+        border: .5px solid rgba(0, 0, 0, .23);
+        border-radius: 4px;
+
+        .iconContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 46px;
+            height: 100%;
+            border-right: .5px solid rgba(0, 0, 0, .23);
+
+            .insertIcon {
+                fill: rgba(0, 0, 0, .34);
+            }
+        }
+
+        .url {
+            width: 100%;
+            max-width: 416px;
+            padding: 11px;
+            overflow-x: hidden;
+            color: rgba(0, 0, 0, .54);
+            font-weight: normal;
+            font-size: 10px;
+            font-style: normal;
+            line-height: 22px;
+            letter-spacing: .015em;
+            text-overflow: ellipsis;
+            background: none;
+            border-width: 0;
+            outline: none;
+            user-select: none;
+        }
+
+        .copyButton {
+            width: 83px;
+            margin: 0 5px 0 auto;
+        }
+    }
+}

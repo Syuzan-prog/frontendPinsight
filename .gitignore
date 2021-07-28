@@ -1,0 +1,10 @@
+.vscode
+.idea
+/.cache
+/dist
+/node_modules
+yarn-error.log
+.env
+stats.json.log
+**/.DS_Store
+deploy.sh

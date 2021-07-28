@@ -1,0 +1,15 @@
+@import "./colors";
+
+@import "./variables";
+
+%flexCenterCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin blockStyle($width: 280px, $padding: 42px 64px 68px) {
+    width: $width;
+    padding: $padding;
+    background: #ffffff;
+}

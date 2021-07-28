@@ -1,0 +1,12 @@
+export const PREDICTION_MODAL_NAME = 'predictionModal';
+export const CREATE_PROJECT_MODAL_NAME = 'createProjectModal';
+export const CONFIGURE_PROJECT_MODAL_NAME = 'configureProjectModal';
+export const ADD_DATA_MODAL_NAME = 'addDataModal';
+export const UPGRADE_MODAL_NAME = 'upgradeModal';
+export const CHANGE_PASSWORD_MODAL_NAME = 'changePasswordModal';
+export const RECOVER_PASSWORD_MODAL_NAME = 'recoverPasswordModal';
+export const CHECK_EMAIL_MODAL_NAME = 'checkEmailModal';
+export const CREATE_PASSWORD_MODAL_NAME = 'createPasswordModal';
+export const REQUEST_UPGRADE_MODAL_NAME = 'requestUpgradeModal';
+export const DELETE_ENTITY_MODAL_NAME = 'deleteEntityModal';
+export const CHECK_LATER_MODAL_NAME = 'checkLaterModal';

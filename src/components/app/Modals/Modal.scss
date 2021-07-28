@@ -1,0 +1,28 @@
+.modal {
+    align-items: center;
+    min-width: 120px;
+    min-height: 120px;
+    padding-top: 58px;
+    // the following 2 rules are defaults
+    // left and right paddings may vary depending on modal
+    padding-right: 40px;
+    padding-left: 40px;
+    overflow: hidden;
+  
+    .closeButton {
+        position: absolute;
+        top: 28px;
+        right: 28px;
+        cursor: pointer;
+        fill: rgba(0, 0, 0, .54);
+    }
+
+}
+
+.background {
+    background: url("resources/assets/svg/modal-background.svg");
+    background-color: #ffffff;
+    background-position: center;
+    background-size: 100% 100%;
+    background-origin: border-box;
+}

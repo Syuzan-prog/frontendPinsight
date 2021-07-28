@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 370px;
+    height: 258px;
+    text-align: center;
+
+    .headerText {
+        margin-top: 18px;
+    }
+
+    .descText {
+        margin-top: 8px;
+    }
+
+    .buttonContainer {
+        margin-top: 18px;
+
+        .button {
+            width: 116px;
+        }
+    }
+
+}

@@ -1,0 +1,42 @@
+.modal {
+    width: 370px;
+    min-height: 258px;
+    text-align: center;
+
+    .title {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .description {
+        text-align: center;
+    }
+
+    .checkboxGroup {
+        margin-top: 10px;
+
+        .checkbox {
+            color: #FF505F;
+        } 
+    }
+
+    .actions {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        margin-top: 28px;
+
+        .cancelButton {
+            color: rgba(0, 0, 0, .34);
+        }
+    
+        .deleteButton {
+            color: #ffffff;
+            background-color: rgba(244, 67, 54, 1);
+        }
+    }
+
+    &.withCheckbox {
+        height: 316px;
+    }
+}

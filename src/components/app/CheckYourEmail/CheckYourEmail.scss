@@ -1,0 +1,9 @@
+@import "resources/mixins.scss";
+
+.block {
+  text-align: center;
+
+  @extend %flexCenterCenter;
+
+  @include blockStyle($padding: 104px 64px 90px);
+}

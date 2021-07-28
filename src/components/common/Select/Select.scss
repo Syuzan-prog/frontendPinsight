@@ -1,0 +1,28 @@
+.requiredColor {
+    color: #ff0000;
+}
+
+.noOptions {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    color: rgba(0, 0, 0, .54);
+    font-size: 14px;
+    letter-spacing: .15px;
+}
+
+.staticBackground:focus {
+    background-color: inherit;
+}
+
+.headerSelect {
+    margin-top: -8px;
+    color: rgba(0, 0, 0, .87);
+    font-size: 20px;
+}
+
+.headerIcon {
+    top: calc(50% - 18px);
+    right: -15px;
+}

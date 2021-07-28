@@ -1,0 +1,11 @@
+@import "resources/mixins.scss";
+
+.container {
+  box-sizing: border-box;
+  height: 100vh;
+  background: url("resources/assets/svg/landing-background.svg") no-repeat center
+    center fixed;
+  background-size: cover;
+
+  @extend %flexCenterCenter;
+}

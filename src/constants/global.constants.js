@@ -1,0 +1,1 @@
+export const HORIZONTAL_PAGINATION_OFFSET = 306;

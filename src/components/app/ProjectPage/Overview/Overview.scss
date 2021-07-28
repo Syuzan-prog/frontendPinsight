@@ -1,0 +1,182 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: space-between;
+    
+    .block {
+        display: flex;
+        flex-direction: column;
+        height: 291px;
+        padding: 22px 24px;
+
+        .label {
+            color: rgba(0, 0, 0, .87);
+            font-weight: normal;
+            font-style: normal;
+            line-height: 17px;
+        }
+    }
+
+    .largeChart {
+        height: 426px;
+    }
+
+    .segmentsTable {
+
+        .title {
+            margin-bottom: 24px;
+        }
+    }
+
+    .drivingFactors {
+
+        .showCount {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 90px;
+    
+            & > label {
+                position: relative;
+            };
+    
+            & > div {
+                margin-top: 0;
+    
+                &:before {
+                    display: none;
+                };
+            };
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 22px;
+        }
+    }
+
+    .factorsLegend {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 15px;
+
+        span {
+            display: inline-flex;
+            color: rgba(0, 0, 0, .34);
+            font-size: 12px;
+            letter-spacing: .4px;
+
+            &:before {
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                margin-right: 8px;
+                border-radius: 2px;
+                content: "";
+            }
+
+            &[data-identity="mixed"] {
+
+                &:before {
+                    background: #BDBDBD;
+                }
+            }
+
+            &[data-identity="positive"] {
+                margin: 0 20px;
+
+                &:before {
+                    background: #7C7CD9;
+                }
+            }
+
+            &[data-identity="negative"] {
+
+                &:before {
+                    background: #FF9A75;
+                }
+            }
+        }
+    }
+
+    .effectByFeature {
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 45px;
+        }
+
+        .featureSelect {
+            flex-shrink: 0;
+            align-self: flex-start;
+            width: 172px;
+            margin-left: 40px;
+
+            :global(.MuiFilledInput-root) {
+                border-radius: 4px;
+            }
+
+            :global(.MuiSelect-root) {
+                padding: 8px 32px 8px 16px;
+            }
+        }
+    }
+
+    .modelHealth {
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 42px;
+        }
+
+        :global(.MuiGrid-container) {
+            height: 100%;
+        }
+
+        :global(.MuiGrid-item) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                text-align: center;
+            }
+        }
+
+        .noFairness {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+
+            span {
+                margin-top: 4px;
+            }
+        }
+    }
+
+    :global(.bad) {
+        color: #E31B0C;
+    }
+
+    :global(.good) {
+        color: #FF9800;
+    }
+
+    :global(.great) {
+        color: #3B873E;
+    }
+}
+
+.selectMenu {
+    height: 208px;
+}

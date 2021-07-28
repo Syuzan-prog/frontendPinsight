@@ -1,0 +1,15 @@
+.metaFields {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+
+    .input {
+        width: 320px;
+    }
+
+}
+
+.submitButton {
+    float: right;
+    margin-top: 46px !important;
+}

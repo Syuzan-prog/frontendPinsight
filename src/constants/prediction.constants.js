@@ -1,0 +1,20 @@
+export const PREDICTION_FORM = 'prediction';
+
+export const PREDICTION_NAME_FIELD_NAME = 'name';
+export const PREDICTION_DESCRIPTION_FIELD_NAME = 'description';
+export const PREDICTION_DATA_FIELD_NAME = 'datasourceId';
+export const PREDICTION_PROJECT_FIELD_NAME = 'projectId';
+
+export const MAX_DESCRIPTION_STRING_LENGTH = 105;
+
+export const PREDICTION_STATUS_NOT_PREDICTED = 'NOT_PROCESSED';
+export const PREDICTION_STATUS_IN_PREDICTING = 'PROCESSING';
+export const PREDICTION_STATUS_READY = 'READY';
+export const PREDICTION_STATUS_FAILED = 'FAILED';
+
+export const PREDICTION_STATUS_TO_LABEL = {
+    [PREDICTION_STATUS_NOT_PREDICTED]: 'Not Started',
+    [PREDICTION_STATUS_IN_PREDICTING]: 'In Process',
+    [PREDICTION_STATUS_READY]: 'Completed',
+    [PREDICTION_STATUS_FAILED]: 'Failed',
+};

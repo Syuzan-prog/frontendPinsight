@@ -1,0 +1,289 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    padding-top: 24px;
+
+    .crumbs {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    %paper {
+        padding: 22px 24px;
+    }
+
+    .thresholdContainer {
+        @extend %paper;
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 23px;
+        }
+
+        .sliderContainer {
+            position: relative;
+            padding: 15px 76px 50px 76px;
+
+            %range {
+                position: absolute;
+                bottom: 12px;
+                padding: inherit;
+            }
+
+            .leftRange {
+                left: 0;
+
+                @extend %range;
+            }
+
+            .rightRange {
+                right: 0;
+
+                @extend %range;
+            }
+
+            .valueLabel {
+                top: -28px;
+            }
+        }
+    }
+
+    .metricsContainer {
+        height: 302px;
+
+        @extend %paper;
+
+        .tableContainer {
+            max-height: 228px;
+            margin-top: 32px;
+        }
+    }
+
+    .matrixContainer {
+        height: 302px;
+
+        @extend %paper;
+
+        .matrix {
+            display: flex;
+            height: 240px;
+            
+            .column {
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                justify-content: space-between;
+                min-width: 180px;
+
+                &:first-child {
+                    min-width: 64px;
+                    max-width: 120px;
+                    padding-right: 10px;
+
+                    .cell:not(:first-child) {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 100px;
+                    }
+                }
+
+                &:nth-child(2) {
+                    margin-right: 2px;
+                }
+
+                %cellBase {
+                    min-width: 64px;
+                    min-height: 38px;
+
+                    &:nth-child(2) {
+                        margin-bottom: 2px;
+                    }
+                }
+
+                .cell {
+                    min-width: 64px;
+                    min-height: 38px;
+                    text-align: center;
+
+                    @extend %cellBase;
+                }
+
+                %traitCell {
+                    padding: 27px 20px 24px 20px;
+                }
+
+                .true_negative {
+                    background: rgba(255, 152, 0, .5);
+                    border-radius: 4px 0px 0px 0px;
+
+                    @extend %traitCell;
+
+                    @extend %cellBase;
+                }
+
+                .false_negative {
+                    background: rgba(255, 117, 66, .5);
+                    border-radius: 0px 0px 0px 4px;
+
+                    @extend %traitCell;
+
+                    @extend %cellBase;
+                }
+
+                .false_positive {
+                    background: #C5CAE9;
+                    border-radius: 0px 4px 0px 0px;
+                   
+                    @extend %traitCell;
+
+                    @extend %cellBase;
+                }
+
+                .true_positive {
+                    background: rgba(76, 175, 80, .5);
+                    border-radius: 0px 0px 4px 0px;
+
+                    @extend %traitCell;
+
+                    @extend %cellBase;
+                }
+            }
+        }
+    }
+
+    .chartContainer {
+        height: 326px;
+
+        @extend %paper;
+    }
+
+    .rpSegmentPlotContainer {
+        display: flex;
+        flex-direction: column;
+        height: 302px;
+        padding-bottom: 20px;
+        padding-left: 14px;
+
+        @extend %paper;
+
+        .segmentPlotContainer {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            padding: 30px 24px 0 0;
+
+            .yContainer {
+                display: flex;
+                flex-grow: 1;
+
+                .yLabel {
+                    display: flex;
+                    justify-content: center;
+                    min-height: 200px;
+                    color: rgba(0, 0, 0, .34);
+                    transform: rotate(180deg);
+                    writing-mode: vertical-lr;
+                }
+
+                .yAxisLabels {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    min-width: 64px;
+                    margin-left: 18px;
+    
+                    .label {
+                        display: flex;
+                        flex-grow: 1;
+                        align-items: center;
+                        justify-content: flex-end;
+                        color: rgba(0, 0, 0, .54);
+                        font-weight: 400;
+                        font-size: 12px;
+    
+                        &:after {
+                            width: 6px;
+                            height: 0;
+                            margin-left: 5px;
+                            border-bottom: 1px solid rgba(0, 0, 0, .54);
+                            content: "";
+                        }
+                    }
+                }
+    
+                .table {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1px;
+                    width: 100%;
+                    border-bottom: 1px solid rgba(0, 0, 0, .54);
+                    border-left: 1px solid rgba(0, 0, 0, .54);
+    
+                    .row {
+                        display: flex;
+                        flex-grow: 1;
+                        gap: 1px;
+                        justify-content: space-evenly;
+                        width: 100%;
+    
+                        .cell {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+
+            .xContainer {
+                margin-left: 102px;
+
+                .xLabel {
+                    display: block;
+                    flex-grow: 1;
+                    margin-top: 12px;
+                    color: rgba(0, 0, 0, .34);
+                    text-align: center;
+                }
+
+                .xAxisLabels {
+                    display: flex;
+                    justify-content: space-evenly;
+    
+                    .label {
+                        display: flex;
+                        flex-basis: 0;
+                        flex-direction: column;
+                        flex-grow: 1;
+                        align-items: center;
+                        justify-content: center;
+                        color: rgba(0, 0, 0, .54);
+                        font-weight: 400;
+                        font-size: 12px;
+    
+                        &:before {
+                            width: 0;
+                            height: 6px;
+                            border-left: 1px solid rgba(0, 0, 0, .54);
+                            content: "";
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    :global(.recharts-legend-wrapper) {
+
+        li {
+            margin-left: 45px;
+        }
+    }
+}

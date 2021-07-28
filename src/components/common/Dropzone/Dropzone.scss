@@ -1,0 +1,51 @@
+.dropzone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 66px 0 74px 0;
+    background: #FFFFFF;
+    border: 1px dashed #D0D0D0;
+    border-radius: 6px;
+
+    svg {
+        font-size: 44px;
+        fill: rgba(0, 0, 0, .54);
+    }
+
+    .browseButton {
+        color: #2196f3;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.filesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 26px;
+
+    .fileRow {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 50px;
+            height: 50px;
+            margin-right: 16px;
+        }
+
+        .progressContainer {
+            display: flex;
+            align-items: center;
+            width: 320px;
+            margin-left: auto;
+        }
+
+        .progress {
+            width: 100%;
+            margin-right: 8px;
+        }
+    }
+}

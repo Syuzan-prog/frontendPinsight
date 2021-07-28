@@ -1,0 +1,40 @@
+.list {
+    display: flex;
+    width: fit-content;
+    max-width: calc(100% - 100px);
+    height: 76px;
+    margin: 42px 0 0 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        margin-right: 10px;
+
+        img {
+            box-sizing: border-box;
+            width: 76px;
+            height: 76px;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &.active {
+                border: 2px solid #6564C4;
+            }
+        }
+    }
+}
+
+.addAvatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 74px;
+    height: 74px;
+    border: 1px solid rgba(0, 0, 0, .34);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.addIcon {
+    fill: rgba(0, 0, 0, .34)!important;
+}

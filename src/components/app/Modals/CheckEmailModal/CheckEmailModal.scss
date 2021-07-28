@@ -1,0 +1,21 @@
+@import "resources/mixins.scss";
+
+.modal {
+  width: 328px;
+  height: 217px;
+  padding-top: 100px;
+  padding-bottom: 89px;
+
+  div {
+    padding: 0;
+    margin: auto;
+  }
+}
+
+.block {
+  text-align: center;
+
+  @extend %flexCenterCenter;
+
+  @include blockStyle($padding: 129px 64px);
+}

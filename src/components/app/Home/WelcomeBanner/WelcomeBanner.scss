@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.welcomeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.upgradeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 128px;
+    height: 158px;
+    margin-left: 24px;
+    padding: 24px 30px 18px;
+
+    button {
+        width: 128px;
+        height: 36px;
+        margin-top: 6px;
+        color: #ffffff;
+        border-radius: 4px;
+        box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2),
+            0px 1px 1px rgba(0, 0, 0, .14), 0px 1px 3px rgba(0, 0, 0, .12);
+    }
+}
+
+.upgradeText {
+    margin-top: 12px;
+    color: rgba(0, 0, 0, .54);
+    font-weight: normal;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 20px;
+    text-align: center;
+}
+
+.upgradeTextBold {
+    font-weight: 700;
+}
+
+.fileSvg {
+    width: 64px;
+    height: 64px;
+}
+
+.welcomeTextContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 44px;
+}
+
+.welcomeText {
+    display: inline;
+    color: rgba(0, 0, 0, .87);
+    font-weight: normal;
+    font-style: normal;
+    line-height: 42px;
+}
+
+.welcomeTextBold {
+    color: #212121;
+    font-weight: bold;
+}
+
+.welcomeDesc {
+    max-width: 373px;
+    margin-top: 18px !important;
+    color: rgba(0, 0, 0, .54);
+    font-style: normal;
+    line-height: 22px;
+    word-break: break-word;
+}

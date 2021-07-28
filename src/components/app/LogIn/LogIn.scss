@@ -1,0 +1,54 @@
+@import "resources/mixins.scss";
+
+.block {
+    @include blockStyle($padding: 42px 64px 66px);
+
+    .text {
+        margin: 5px 0 20px;
+
+        &.pristine {
+            margin-bottom: 40px;
+        }
+    }
+
+    .link {
+        display: inline-block;
+        margin-left: 5px;
+        color: $focus-color;
+        text-decoration: underline;
+    }
+
+    .forgotPasswordLink {
+        display: block;
+        margin: 0 8px 6px;
+        text-align: right;
+
+        a {
+            color: $focus-color;
+            text-decoration: none;
+        }
+    }
+
+    .alert {
+        margin-bottom: 15px;
+        padding: 0 16px !important;
+    }
+
+    .alertWarning{
+        padding: 6px 16px !important;
+        margin-bottom: 15px;
+    }
+
+    .checkbox {
+        margin: 0 0 10px;
+
+        .coloredCheckbox {
+            color: $focus-color;
+        }
+    }
+
+    .button {
+        width: 280px;
+        height: 42px;
+    }
+}

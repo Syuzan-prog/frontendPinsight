@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 334px;
+    padding: 20px 24px;
+
+    .barContainer {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        div {
+            display: flex;
+            align-items: center;
+
+            .paperTitle {
+                color: rgba(0, 0, 0, .87);
+            }
+        }
+    }
+
+    .innerContainer {
+        display: flex;
+        margin-top: 22px;
+        padding: 18px 40px 14px;
+        background: #FAFAFA;
+        border-radius: 4px;
+        box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px rgba(0, 0, 0, .14), 0 1px 3px rgba(0, 0, 0, .12);
+
+        .list {
+            width: 50%;
+            padding: 0;
+
+            .listItem {
+                padding-top: 0 !important;
+            }
+
+            .greyText {
+                color: rgba(0, 0, 0, .54);
+            }
+        }
+
+        .listBorder {
+            border-right: .4px solid rgba(0, 0, 0, .23);
+        }
+    }
+}
